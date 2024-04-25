@@ -11,3 +11,10 @@ User's new item will appear in the list above.
 To mark an item as completed, simply tap on it. The item's text will be struck through, indicating that the user has achieved that goal.
 If the user changes their mind, they can just tap the item again to remove the strikethrough and mark it as incomplete.
 
+Screenshots:
+
+![App page](<Screenshots/Screenshot 1_app page.png>)
+
+![error](<Screenshots/Screenshot 2_error.png>)
+
+![Populated list with some completed items](Screenshots/Screenshot3_List_.png)
