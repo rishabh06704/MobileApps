@@ -22,6 +22,6 @@ Screenshots:
 ![error](<Screenshots/Screenshot 2_error.png>)
 
 
-3: Populated list with some completed items
+3: Populated list with some completed items indicated by a strike-through
 
 ![Populated list with some completed items](Screenshots/Screenshot3_List_.png)
