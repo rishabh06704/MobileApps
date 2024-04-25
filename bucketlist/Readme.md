@@ -13,8 +13,15 @@ If the user changes their mind, they can just tap the item again to remove the s
 
 Screenshots:
 
+1: App landing page:
 ![App page](<Screenshots/Screenshot 1_app page.png>)
 
+
+2: App error handling for empty input
+
 ![error](<Screenshots/Screenshot 2_error.png>)
+
+
+3: Populated list with some completed items
 
 ![Populated list with some completed items](Screenshots/Screenshot3_List_.png)
