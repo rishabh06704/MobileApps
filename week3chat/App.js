@@ -1,12 +1,24 @@
 import React, {useState} from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, ScrollView, Image, Button } from 'react-native';
+import { DefaultTheme, PaperProvider, MD3LightTheme as defaultTheme } from 'react-native-paper';
+import { StyleSheet, View, ScrollView, Image } from 'react-native';
+import {Text, TextInput, Button} from 'react-native-paper'
+
+
+const theme = {
+  ...DefaultTheme,
+  Colors: {
+    ...defaultTheme.colors
+  }
+}
+
 
 export default function App() {
   return (
+    <PaperProvider theme = {theme}>
     <View style={styles.container}>
       <MessageList/>
     </View>
+    </PaperProvider>
   );
 }
 
@@ -15,7 +27,8 @@ const MessageList = () => {
   const [texts, setTexts] = useState(['Roger!', 'Roger back!']);
 
   return (
-    <View style={{flex:1, flexDirection: 'column'}}>
+    <ScrollView style={[styles.shadow, 
+    {flex:1, flexDirection: 'column'}]}>
       <Message text="First Message." />
       <Message text="Second Message." />
       {texts.map( (text, index) => (<Message key={index} text={text} />) )}
@@ -25,14 +38,14 @@ const MessageList = () => {
           defaultValue={text}
           onChangeText={ newText => setText(newText)} 
           />
-        <Button title="Send"
+        <Button title="Send" icon ='send' raised
           onPress={() => {
             setTexts([...texts, text])
 
           }}
         />  
       </View>
-    </View>
+    </ScrollView>
 
   );
 }
@@ -65,5 +78,9 @@ const styles = StyleSheet.create({
     alignItems: 'Center',
     justifyContent: 'center',
 
+  },
+  shadow: {
+    shadowColor: "grey",
+    zindex: 9999,
   }
 });
