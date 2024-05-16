@@ -31,11 +31,11 @@ Screenshots:
 
 ![Image Clicked](image-3.png)
 
-3. Profile page with Text input fields, Radio toggles, dropdwon, check box, Save button functionailty, and data persistance on reload (could not include a screenshot for data persistance besides verifying fro the terminal log)
+3. Profile page with Text input fields, Radio toggles, dropdown, check box, Save button functionailty, and data persistance on reload (could not include a screenshot for data persistance besides verifying from the terminal log)
 
 ![Profile page](image-5.png)
 
-4. Error handling when emptyy fields are passed i text inputs
+4. Error handling when emptyy fields are passed in text inputs
 
 ![Error Handling](image-6.png)
 
