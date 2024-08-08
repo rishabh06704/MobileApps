@@ -1,1 +1,0 @@
-We used react-navigation, so make sure to install react navigation and its expo dependancy
